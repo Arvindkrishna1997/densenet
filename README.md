@@ -1,11 +1,11 @@
-# densenet
+# Densenet
 Implements dense net on MNIST dataset
 
 ## Model
 
     A brief description of the Model is provided below.
  
-### high level view
+### High Level View
     
 Input layer -> Block 1 -> Batch Normalization -> Relu -> Global average pooling -> Fully connected layer
 
@@ -23,7 +23,7 @@ Input layer -> Block 1 -> Batch Normalization -> Relu -> Global average pooling 
    3. Convolutional 2d layer
    4. Average Pooling 
       
-### hyper parameters and other essential attributes
+### Hyper parameters and other essential attributes
 
 * Input dimension = [100, 28, 28, 1] (Trained using batches of 100 images)
 * Ouput dimension = [10]
