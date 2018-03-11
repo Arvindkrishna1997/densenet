@@ -126,7 +126,6 @@ with tf.variable_scope(tf.get_variable_scope(), reuse=tf.AUTO_REUSE):
             def add_layer(name, l, i):
                 shape = l.get_shape().as_list()
                 in_channel = shape[3]
-                print(l.get_shape().as_list() , "hey this is l")
                 with tf.variable_scope(name) as scope:
                     c = BatchNorm('bn1_layers{}'.format(i), l)
                     c = tf.nn.relu(c)
